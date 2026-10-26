@@ -16,11 +16,11 @@ class TextRequest(BaseModel):
     text: TextInput
 
 
-class ToneRequest(BaseModel): 
+class ToneRequest(TextRequest): 
     tone: Literal["professional", "casual", "friendly", "formal"]
 
 
-class LengthRequest(BaseModel): 
+class LengthRequest(TextRequest): 
     length: Literal["shorter", "longer"]
 
 

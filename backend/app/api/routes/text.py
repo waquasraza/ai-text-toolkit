@@ -61,7 +61,7 @@ def correct_grammer(request: TextRequest) -> APIResponse:
 
 
 @router.post("/tone", response_model=APIResponse)
-def change_tone(request: TextRequest) -> APIResponse:
+def change_tone(request: ToneRequest) -> APIResponse:
     return process_text_request(
         text=request.text,
         operation="tone",
